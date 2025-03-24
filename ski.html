@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skills & Languages</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .back-button {
+                background: linear-gradient(to right, #e3fffd, #c0ffe7);
+                color: rgb(15, 63, 41);
+                width: auto;
+                border-radius: 24px;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                font-size: 1rem;
+                margin-right: 90%;
+            }
+
+            .skills-section {
+                margin: 20px auto;
+                padding: 20px;
+                max-width: 800px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .skills-section h2 {
+                text-align: center;
+                color: #2d5b5c;
+                margin-bottom: 20px;
+            }
+
+            .skills-list, .languages-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .skills-list li, .languages-list li {
+                background: #f4f4f9;
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                font-size: 1rem;
+                color: #333;
+            }
+
+            .skills-list li strong, .languages-list li strong {
+                color: #2d5b5c;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <button class="back-button" onclick="location.href='portfolio.html'"> << Back </button>
+            <h1 style="text-align: center; padding-bottom: 20px;">Skills & Languages</h1>
+        </header>
+        <hr>
+
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Python, JavaScript, C++</li>
+                <li><strong>Web Development:</strong> HTML, CSS, React.js</li>
+                <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+                <li><strong>Tools & Platforms:</strong> Git, Docker, VS Code</li>
+                <li><strong>Machine Learning:</strong> TensorFlow, Scikit-learn</li>
+            </ul>
+        </section>
+
+        <section class="skills-section">
+            <h2>Languages</h2>
+            <ul class="languages-list">
+                <li><strong>English:</strong> Fluent</li>
+                <li><strong>Tamil:</strong> Native</li>
+                <li><strong>Hindi:</strong> Intermediate</li>
+            </ul>
+        </section>
+    </body>
+</html>

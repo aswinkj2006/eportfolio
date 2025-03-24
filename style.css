@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #2d5b5c, #265443);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: #09383f;
+
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2d5b5c;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    border-radius: 16px;
+    height: 50px;
+    width: 120px;
+    background-color: #09383f;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b4d55;
+}
+
+a {
+    color: #2d5b5c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 30px;
+    background-color: #2d5b5c;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding:15px;
+    padding-bottom:35px;
+    font-size: 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #265443;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2d5b5c;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
