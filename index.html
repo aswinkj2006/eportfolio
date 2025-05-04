@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title> Aswin's E-Portfolio </title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Aswin K J | Portfolio</title>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="navbar glass">
+    <div class="nav-logo">E-Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="acad.html">Academics</a></li>
+      <li><a href="ski.html">Skills</a></li>
+      <li><a href="cert.html">Certifications</a></li>
+      <li><a href="we.html">Experience</a></li>
+      <li><a href="pro.html">Projects</a></li>
+    </ul>
+  </nav>
 
-    <body>
-        <center>
-            <header>
-                <h1 style="margin: 0;" > Welcome to my E-Portfolio </h1>
-            </header>
-            <hr>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="1.jpg" alt="Aswin" class="hero-img" />
+    </div>
+    <div class="hero-right">
+      <h1>Hi, I'm <span class="highlight">Aswin K J</span></h1>
+      <p>Welcome to my digital space.</p>
+      <a href="#about" class="scroll-btn">↓ Scroll to know me</a>
+    </div>
+  </section>
 
-            <section>
-                <p> Hi my name is Aswin K J and I'd like to call myself a Tech Enthusiast </p>
-                <img src="1.jpg" width="250" height="250">
-            </section>
+  <!-- About Scroll Section -->
+  <section class="about-section" id="about">
+    <div class="about glass">
+      <h2>Hello Again 👋</h2>
+      <p>I'm a 19-year-old tech enthusiast currently pursuing B.Tech at SNS College of Technology, Coimbatore.</p>
+      <div class="links">
+        <a href="https://linkedin.com/in/aswinkj2006" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/aswinkj2006" target="_blank" class="btn">GitHub</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+  </section>
 
-            <section>
-                <p> I'm a 19 year old boy currently pursuing B.Tech in SNS College of Technology in Coimabtore</p>
-                <h2> More Info about Me : </h2>
-                <button onclick="location.href='portfolio.html'">Click Me</button>
-            </section>
-            <hr>
+  <!-- Contact -->
+  <section class="contact glass" id="contact">
+    <h2>Get in Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
 
-            <section>
-                <h2> Necessary Informations </h2>
-                <p><a href="https://www.linkedin.com/in/aswin-kj-aiml/"> LinkedIn </a> | <a href="Aswin's Resume.pdf"> Resume </a>
-            </section>
-            <hr>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Aswin K J. Built with HTML & CSS.</p>
+  </footer>
 
-            <section>
-                <h2> Lets Connect </h2>
-                <form>
-                    <label for="name"> Name: </label>
-                    <input type="text" id="name" name="name"> <br> <br>
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.hero-left', { delay: 200, distance: '50px', origin: 'left' });
+  ScrollReveal().reveal('.hero-right', { delay: 300, distance: '50px', origin: 'right' });
+  ScrollReveal().reveal('.hero-down', { delay: 300, distance: '50px', origin: 'right' });
+  ScrollReveal().reveal('.about', { delay: 400, distance: '30px', origin: 'bottom' });
+  ScrollReveal().reveal('.contact', { delay: 400, distance: '30px', origin: 'bottom' });
+</script>
 
-                    <label for="email"> Email: </label>
-                    <input type="email" id="email" name="email"> <br> <br>
-
-                    <label for="number"> Mobile No: </label>
-                    <input type="number" id="number" name="number"> <br> <br>
-                    
-                    <label for="message"> Message: </label>
-                    <textarea id="message" name="message"></textarea> <br> <br>
-
-                    <button type="submit"> Send </button>
-                </form>
-
-            <footer>
-                <p>&copy;2025 A project done by Aswin using HTML & CSS </p>
-            </footer>
-        </center>
-    </body>
-            
+</body>
 </html>

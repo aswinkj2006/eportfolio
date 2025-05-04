@@ -1,97 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Projects</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <style>
-            .back-button {
-                background: linear-gradient(to right, #e3fffd, #c0ffe7);
-                color: rgb(15, 63, 41);
-                width: auto;
-                border-radius: 24px;
-                padding: 10px 20px;
-                border: none;
-                cursor: pointer;
-                font-size: 1rem;
-                margin-right: 90%;
-            }
+<head>
+    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #a7f3d0, #d1eaff);
+            margin: 0;
+            padding: 0;
+        }
+        .back-button {
+            background: linear-gradient(to right, #e3fffd, #c0ffe7);
+            color: rgb(15, 63, 41);
+            width: auto;
+            border-radius: 24px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: 5%;
+            display: inline-block;
+            text-decoration: none;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .projects-section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .project-item {
+            background: #f9f9f9;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .project-item h3 {
+            color: #2d5b5c;
+        }
+        .project-item p {
+            color: #555;
+        }
+        .project-item a {
+            color: #2d5b5c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="location.href='index.html'"> << Back </button>
+        <h1>Projects</h1>
+    </header>
 
-            .projects-section {
-                margin: 20px auto;
-                padding: 20px;
-                max-width: 800px;
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-
-            .projects-section h2 {
-                text-align: center;
-                color: #2d5b5c;
-                margin-bottom: 20px;
-            }
-
-            .project-item {
-                margin-bottom: 20px;
-                padding: 15px;
-                background: #f4f4f9;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-
-            .project-item h3 {
-                color: #2d5b5c;
-                margin-bottom: 10px;
-            }
-
-            .project-item p {
-                margin: 0;
-                color: #555;
-            }
-
-            .project-item a {
-                color: #2d5b5c;
-                text-decoration: none;
-                font-weight: bold;
-            }
-
-            .project-item a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <button class="back-button" onclick="location.href='portfolio.html'"> << Back </button>
-            <h1 style="text-align: center; padding-bottom: 20px;">My Projects</h1>
-        </header>
-        <hr>
-
-        <section class="projects-section">
-            <h2>Projects</h2>
-            <div class="project-item">
-                <h3>Project 1: E-Commerce Website</h3>
-                <p><strong>Description:</strong> Developed a fully functional e-commerce website with features like product listing, cart management, and payment integration.</p>
-                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js, Node.js</p>
-                <p><a href="https://github.com/yourusername/ecommerce-project" target="_blank">View on GitHub</a></p>
-            </div>
-
-            <div class="project-item">
-                <h3>Project 2: AI Chatbot</h3>
-                <p><strong>Description:</strong> Created an AI-powered chatbot for customer support using natural language processing.</p>
-                <p><strong>Technologies:</strong> Python, TensorFlow, Flask</p>
-                <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p>
-            </div>
-
-            <div class="project-item">
-                <h3>Project 3: Portfolio Website</h3>
-                <p><strong>Description:</strong> Designed and developed a personal portfolio website to showcase my skills and projects.</p>
-                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-                <p><a href="https://github.com/yourusername/portfolio-website" target="_blank">View on GitHub</a></p>
-            </div>
-        </section>
-    </body>
+    <section class="projects-section">
+        <div class="project-item">
+            <h3>Project 1: E-Commerce Website</h3>
+            <p><strong>Description:</strong> Developed a fully functional e-commerce website with features like product listing, cart management, and payment integration.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js, Node.js</p>
+            <p><a href="https://github.com/yourusername/ecommerce-project" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Project 2: AI Chatbot</h3>
+            <p><strong>Description:</strong> Created an AI-powered chatbot for customer support using natural language processing.</p>
+            <p><strong>Technologies:</strong> Python, TensorFlow, Flask</p>
+            <p><a href="https://github.com/yourusername/ai-chatbot" target="_blank">View on GitHub</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Project 3: Portfolio Website</h3>
+            <p><strong>Description:</strong> Designed and developed a personal portfolio website to showcase my skills and projects.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <p><a href="https://github.com/yourusername/portfolio-website" target="_blank">View on GitHub</a></p>
+        </div>
+    </section>
+</body>
 </html>
