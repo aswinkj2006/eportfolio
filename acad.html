@@ -36,25 +36,31 @@
     <div class="about glass">
       <h2 style="padding-top: 20px;color:#1876ceb5;">Academic Background</h2>
 
-      <div class="academic-item glass">
-        <h3>B.Tech in Artificial Intelligence and Machine Learning</h3>
+      <div class="accordion glass">
+        <h3 class="accordion-header">B.Tech in Artificial Intelligence and Machine Learning</h3>
+        <div class="accordion-content">
         <p><strong>Institution:</strong> SNS College of Technology, Coimbatore</p>
         <p><strong>Year:</strong> 2022 - Present</p>
         <p><strong>CGPA:</strong> 9.1 (Till Date)</p>
+        </div>
       </div>
 
-      <div class="academic-item glass">
-        <h3>Higher Secondary Education</h3>
+      <div class="accordion glass">
+        <h3 class="accordion-header">Higher Secondary Education</h3>
+        <div class="accordion-content">
         <p><strong>Institution:</strong> The Oxford School</p>
         <p><strong>Year:</strong> 2016 - 2024</p>
         <p><strong>Percentage:</strong> 89%</p>
+        </div>
       </div>
 
-      <div class="academic-item glass">
-        <h3>Secondary Education</h3>
+      <div class="accordion glass">
+        <h3 class="accordion-header">Secondary Education</h3>
+        <div class="accordion-content">
         <p><strong>Institution:</strong> Chinmaya Vidyalaya</p>
         <p><strong>Year:</strong> 2008 - 2016</p>
         <p><strong>Percentage:</strong> 95%</p>
+        </div>
       </div>
     </div>
   </section>
@@ -66,9 +72,11 @@
 
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js" defer></script>
   <script>
     ScrollReveal().reveal('.about', { delay: 300, distance: '30px', origin: 'bottom' });
     ScrollReveal().reveal('.academic-item', { delay: 400, distance: '30px', origin: 'bottom', interval: 150 });
   </script>
+
 </body>
 </html>

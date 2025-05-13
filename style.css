@@ -224,6 +224,34 @@
   color: #133799;
 }
 
+.accordion-header {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 12px 16px;
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #dce9ff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease, opacity 0.3s ease;
+  padding: 0 16px;
+  opacity: 0;
+}
+
+.accordion.expanded .accordion-content {
+  max-height: 300px; /* or `fit-content` with JS */
+  opacity: 1;
+  padding: 12px 16px;
+}
+
+
 .academic-item p {
   margin: 6px 0;
   color: #000000;
