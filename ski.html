@@ -6,46 +6,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <title>Skills & Languages | Aswin K J</title>
-  <style>
-    .skills-section {
-      padding: 40px;
-      margin-bottom: 40px;
-      border-radius: 20px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .skills-section h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      color: #133799;
-      margin-bottom: 30px;
-    }
-
-    .skills-list,
-    .languages-list {
-      list-style: none;
-      padding: 0;
-      font-size: 1rem;
-    }
-
-    .skills-list li,
-    .languages-list li {
-      margin: 10px 0;
-      padding: 12px 16px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0);
-      backdrop-filter: blur(10px);
-      color: #000000;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    h1.page-title {
-      text-align: center;
-      font-size: 2.2rem;
-      color: #1876ceb5;
-      margin: 10px 0 30px;
-    }
-  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -64,12 +24,12 @@
   <!-- Skills Page Content -->
   <section class="about-section" style="padding-top: 120px;">
     <div class="about glass">
-      <h1 class="page-title">Skills & Languages</h1>
+      <h1 class="accordion-title">Skills & Languages</h1>
 
       <div class="accordion glass">
         <h3 class="accordion-header">Technical Skills</h3>
         <div class="accordion-content">
-        <ul class="skills-list">
+        <ul class="accordion-list">
           <li><strong>Programming Languages:</strong> Python, C++, JavaScript</li>
           <li><strong>Web Development:</strong> HTML, CSS, React.js, Flutterflow</li>
           <li><strong>Database Management:</strong> MySQL</li>
@@ -81,7 +41,7 @@
       <div class="accordion glass">
         <h3 class="accordion-header">Languages</h3>
         <div class="accordion-content">
-        <ul class="languages-list">
+        <ul class="accordion-list">
           <li><strong>English:</strong> Fluent</li>
           <li><strong>Tamil:</strong> Intermediate</li>
           <li><strong>Malayalam:</strong> Native</li>
@@ -103,7 +63,7 @@
   <script src="main.js" defer></script>
   <script>
     ScrollReveal().reveal('.about', { delay: 300, distance: '30px', origin: 'bottom' });
-    ScrollReveal().reveal('.skills-section', { delay: 400, distance: '30px', origin: 'bottom', interval: 150 });
+    ScrollReveal().reveal('.accordion-section', { delay: 400, distance: '30px', origin: 'bottom', interval: 150 });
   </script>
 </body>
 </html>
