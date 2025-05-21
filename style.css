@@ -59,7 +59,7 @@
   .hero {
     display: flex;
     height: 100vh;
-    margin-top: 60px;
+    margin-top: 0px;
     
   }
   .hero-left {
@@ -215,15 +215,6 @@
 }
 
 
-
-
-.academic-item h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.3rem;
-  color: #133799;
-}
-
 .accordion-header {
   cursor: pointer;
   font-weight: 600;
@@ -288,22 +279,47 @@ h1.accordion-title {
   margin-bottom: 30px;
 }
 
-.academic-item p {
-  margin: 6px 0;
-  color: #000000;
+/* Full navbar for desktop */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.certification-item h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-size: 1.3rem;
-  color: #133799;
+/* Hide hamburger on desktop */
+.hamburger {
+  display: none;
 }
 
-.certification-item p {
-  margin: 6px 0;
-  color: #000000;
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+  }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
 
 

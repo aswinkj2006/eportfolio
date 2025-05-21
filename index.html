@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <title>Aswin K J | Portfolio</title>
 </head>
 <body>
   <!-- Top Navigation -->
-  <nav class="navbar glass">
-    <div class="nav-logo">E-Portfolio</div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="acad.html">Academics</a></li>
-      <li><a href="ski.html">Skills</a></li>
-      <li><a href="cert.html">Certifications</a></li>
-      <li><a href="we.html">Experience</a></li>
-      <li><a href="pro.html">Projects</a></li>
-    </ul>
-  </nav>
+<nav class="navbar glass">
+  <div class="nav-logo" style="color: rgb(94, 177, 251);">E-Portfolio</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="acad.html">Academics</a></li>
+    <li><a href="ski.html">Skills</a></li>
+    <li><a href="cert.html">Certifications</a></li>
+    <li><a href="we.html">Experiences</a></li>
+    <li><a href="pro.html">Projects</a></li>
+  </ul>
+</nav>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -71,6 +72,10 @@
   ScrollReveal().reveal('.about', { delay: 400, distance: '30px', origin: 'bottom' });
   ScrollReveal().reveal('.contact', { delay: 400, distance: '30px', origin: 'bottom' });
 </script>
-
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+  }
+</script>
 </body>
 </html>
