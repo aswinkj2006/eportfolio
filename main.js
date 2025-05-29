@@ -1,24 +1,23 @@
+// Accordion functionality
 document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.accordion');
 
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+  accordions.forEach((accordion) => {
+    const header = accordion.querySelector('.accordion-header');
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-
-  const accordions = document.querySelectorAll('.accordion-header');
-
-  accordions.forEach(header => {
     header.addEventListener('click', () => {
-      const accordion = header.parentElement;
-
-      // Optional: close all other accordions
-      document.querySelectorAll('.accordion').forEach(acc => {
-        if (acc !== accordion) acc.classList.remove('expanded');
-      });
-
       accordion.classList.toggle('expanded');
     });
   });
+
+  // Hamburger menu toggle (already exists in your HTML)
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 });
+
